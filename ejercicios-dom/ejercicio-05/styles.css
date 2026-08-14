@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    width: 180px;
+}
+
+.album-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+img {
+    width: 180px;
+    max-width: 100%;
+}
