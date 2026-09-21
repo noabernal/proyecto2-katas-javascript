@@ -17,24 +17,25 @@ element.remove()
 // 1.3
 const cars = ['Mazda 6', 'Ford fiesta', 'Audi A4', 'Toyota corola']
 const div = document.querySelector('[data-function="printHere"]')
-const ul = document.createElement("ul")
+const ulCars = document.createElement("ul")
 for (const car of cars) {
   const li = document.createElement("li")
   li.textContent = car
-  ul.appendChild(li)
+  ulCars.appendChild(li)
 }
-div.appendChild(ul)
+div.appendChild(ulCars)
 
 
 // 1.4
-const countries = [
+const countriesImages = [
   {title: 'Random title', imgUrl: 'https://picsum.photos/300/200?random=1'},
   {title: 'Random title', imgUrl: 'https://picsum.photos/300/200?random=2'},
   {title: 'Random title', imgUrl: 'https://picsum.photos/300/200?random=3'},
   {title: 'Random title', imgUrl: 'https://picsum.photos/300/200?random=4'},
   {title: 'Random title', imgUrl: 'https://picsum.photos/300/200?random=5'}
 ]
-for (const country of countries) {
+
+for (const country of countriesImages) {
   const div = document.createElement("div")
   const h4 = document.createElement("h4")
   h4.textContent = country.title
